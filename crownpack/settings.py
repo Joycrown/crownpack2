@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-g-^!c&1i_5q+%7le$j0-lhyscv25s)*v&jt!84(d)m*=uk3e*1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['crownpack_app.herokuapp.com']
 
 
 # Application definition
