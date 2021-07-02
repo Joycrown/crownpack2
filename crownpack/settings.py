@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crownpack_app.apps.CrownpackAppConfig',
-    'django-bootstrap5',
+    'bootstrap5',
     
 ]
 
