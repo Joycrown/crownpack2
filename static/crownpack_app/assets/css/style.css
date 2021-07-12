@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
-    transition-delay: 0 !important;
+    transition-delay: 0s !important;
   }
 }
 
@@ -260,9 +260,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-@media (max-width: 991px) {
+@media only screen and(min-width: 200px) and (max-width: 767px)  {
   .mobile-nav-toggle {
     display: block;
+  }
+
+  #header .logo {
+    font-size: 20px;
+    margin-left: 0px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
   }
   .navbar ul {
     display: none;
