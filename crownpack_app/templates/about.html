@@ -4,185 +4,294 @@
 
 {% block content %}
 
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>About us</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>About us</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
 
-  <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
+<!-- start offer -->
+<section class="section-padding offer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-5">
+                <div class="section-title-s3">
+                    <h2>Get full range of premium Industrial services for your business</h2>
+                </div>                        
+                <div class="offer-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna.</p>
+                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
+                    <a href="#" class="theme-btn read-more">Read More</a>
+                    <a href="#" class="theme-btn-s2 read-more">Company history</a>
+                </div>
+            </div>
+            <div class="col col-md-7">
+                <div class="offer-pic">
+                    <img src="{% static 'crownpack_app/assets/images/offer-pic.jpg' %}" alt>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end offer -->  
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>About Us</h2>
-          <ol>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li>About Us</li>
-          </ol>
+
+<!-- start cta -->
+<section class="cta section-padding parallax" data-bg-image="{% static 'crownpack_app/assets/images/cta-bg.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Our one and only priority is the <span>customer satisfaction</span></h2>
+                <a href="#" class="theme-btn-s5">Get a quote</a>
+            </div>
         </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about-us" class="about-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-right">
-            <h2>CROWNPACK NIGERIA LIMITED.</h2>
-            <h3>Crownpack Nig Ltd is one of Nigeria leading primary producing food and general merchandise companies. </h3>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <p>
-              Crownpack produce all sort of packages for foods and general merchandise suchs as soaps, 
-              detergents, hair accessories etc and PVC nylons 
-              of different composition for different uses.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Crownpack is ISO22000-2018 (FOOD SAFETY MANAGEMENT SYSTEM) certified company</li>
-              <li><i class="ri-check-double-line"></i> Crownpack is ISO9001-2015 (QUALITY POLICIES) certified company</li>
-            </ul>
-            <p class="fst-italic">
-              Our team is working efficiently and we are ready to expand to world at large...
+    </div> <!-- end container -->
+</section>
+<!-- end cta -->
 
 
-            </p>
-          </div>
+<!-- start features --> 
+<section class="features section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-3">
+                <div class="features-title">
+                    <h2>Why we are best</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+            <div class="col col-md-3 col-sm-4">
+                <div class="feature-grid">
+                    <div class="icon">
+                        <i class="fi flaticon-people"></i>
+                    </div>
+                    <div class="details">
+                        <h3>Expert Engineers</h3>
+                        <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
+                        <a href="#" class="more">Details <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-3 col-sm-4">
+                <div class="feature-grid">
+                    <div class="icon">
+                        <i class="fi flaticon-support"></i>
+                    </div>
+                    <div class="details">
+                        <h3>Customer Support</h3>
+                        <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
+                        <a href="#" class="more">Details <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-3 col-sm-4">
+                <div class="feature-grid">
+                    <div class="icon">
+                        <i class="fi flaticon-time-passing"></i>
+                    </div>
+                    <div class="details">
+                        <h3>Delivery On time</h3>
+                        <p>Sed quia non numquam eius modi tempo ra incidunt ut labore et dolore magnam aliq uam quaera.</p>
+                        <a href="#" class="more">Details <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div> <!-- end container -->
+</section> 
+<!-- end features -->
 
-      </div>
-    </section><!-- End About Us Section -->
 
-    <!-- ======= Our Factory Section ======= -->
-    <section id="Factory" class="factory section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Our <strong>Factory</strong></h2>
-          <p>About equipment, We own modern advanced production equipment, such as computer high speed 
-            9 colours printing machines, widen large lamination machines; cutting and extrusion machines.
-          </p>
-        </div>
+<!-- start our-team -->
+<section class="our-team our-team-bg section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-8 col-md-offset-2">
+                <div class="section-title-s5">
+                    <h2>Our team</h2>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+                </div>
+            </div>
+        </div> <!-- end row -->
 
         <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up">
-              <div class="member-img">
-                <a href="{% url 'section' %}"><img src="{% static 'crownpack_app/assets/img/team/team-1.jpg' %}" class="img-fluid" alt=""></a>
-              </div>
-              <div class="member-info">
-                <h4>8 colors Printing Machine</h4>
-                <span>Section-Flexibles</span>
-              </div>
+            <div class="col col-lg-10 col-lg-offset-1">
+                <div class="team-slider team-grids">
+                    <div class="team-grid">
+                        <div class="member-pic-social square-hover-effect-parent">
+                            <div class="square-hover-effect">
+                                <span class="hover-1"></span>
+                                <span class="hover-2"></span>
+                                <span class="hover-3"></span>
+                                <span class="hover-4"></span>
+                            </div>
+                            <div class="member-pic">
+                                <img src="{% static 'crownpack_app/assets/images/team/img-1.jpg' %}" alt>
+                            </div>
+                            <div class="social">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Malcolm Marshall</h3>
+                            <p>Director of the board</p>
+                        </div>
+                    </div>
+                    <div class="team-grid">
+                        <div class="member-pic-social square-hover-effect-parent">
+                            <div class="square-hover-effect">
+                                <span class="hover-1"></span>
+                                <span class="hover-2"></span>
+                                <span class="hover-3"></span>
+                                <span class="hover-4"></span>
+                            </div>
+                            <div class="member-pic">
+                                <img src="{% static 'crownpack_app/assets/images/team/img-2.jpg' %}" alt>
+                            </div>
+                            <div class="social">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Stephen King</h3>
+                            <p>Director of the board</p>
+                        </div>
+                    </div>
+                    <div class="team-grid">
+                        <div class="member-pic-social square-hover-effect-parent">
+                            <div class="square-hover-effect">
+                                <span class="hover-1"></span>
+                                <span class="hover-2"></span>
+                                <span class="hover-3"></span>
+                                <span class="hover-4"></span>
+                            </div>
+                            <div class="member-pic">
+                                <img src="{% static 'crownpack_app/assets/images/team/img-3.jpg' %}" alt>
+                            </div>
+                            <div class="social">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Michelle Conroy</h3>
+                            <p>Director of the board</p>
+                        </div>
+                    </div>
+                    <div class="team-grid">
+                        <div class="member-pic-social square-hover-effect-parent">
+                            <div class="square-hover-effect">
+                                <span class="hover-1"></span>
+                                <span class="hover-2"></span>
+                                <span class="hover-3"></span>
+                                <span class="hover-4"></span>
+                            </div>
+                            <div class="member-pic">
+                                <img src="{% static 'crownpack_app/assets/images/team/img-1.jpg' %}" alt>
+                            </div>
+                            <div class="social">
+                                <ul class="social-links">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Malcolm Marshall</h3>
+                            <p>Director of the board</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <a href="{% url 'section' %}"><img src="{% static 'crownpack_app/assets/img/team/team-2.jpg' %}" class="img-fluid" alt=""></a>
-              </div>
-              <div class="member-info">
-                <h4>Lamimating Machine</h4>
-                <span>Section-Flexibles-Lamination</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <a href="{% url 'section' %}"><img src="{% static 'crownpack_app/assets/img/team/team-3.jpg' %}" class="img-fluid" alt=""></a>
-              </div>
-              <div class="member-info">
-                <h4>Cutting Machine</h4>
-                <span>Section-Cutting</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <a href="{% url 'section' %}"><img src="{% static 'crownpack_app/assets/img/team/team-4.jpg' %}" class="img-fluid" alt=""></a>
-              </div>
-              <div class="member-info">
-                <h4>Extrusion Machine</h4>
-                <span>Section-Extrusion</span>
-              </div>
-            </div>
-          </div>
-
         </div>
+        
+    </div> <!-- end container -->
+</section>
+<!-- end our-team -->
 
-      </div>
-    </section><!-- End Our Team Section -->
 
-    
-
-    <!-- ======= Our Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Clients</h2>
+<!-- start fun-fact -->
+<section class="fun-fact">
+    <div class="container">
+        <div class="row start-count">
+            <div class="col col-sm-4">
+                <div class="grid">
+                    <h3><span class="counter" data-count="1200">00</span><span>+</span></h3>
+                    <span class="fact-title">Projects</span>
+                    <p>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+                </div>
+            </div>
+            <div class="col col-sm-4">
+                <div class="grid">
+                    <h3><span class="counter" data-count="800">00</span><span>+</span></h3>
+                    <span class="fact-title">Clients</span>
+                    <p>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+                </div>
+            </div>
+            <div class="col col-sm-4">
+                <div class="grid">
+                    <h3><span class="counter" data-count="99.5">00</span><span>%</span></h3>
+                    <span class="fact-title">satisfaction</span>
+                    <p>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
+                </div>
+            </div>
         </div>
+    </div> <!-- end container -->
+</section>
+<!-- end fun-fact -->
 
-        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
 
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{% static 'crownpack_app/assets/img/clients/client-1.png' %}" class="img-fluid" alt="">
+<!-- start partners -->
+<section class="section-padding partners partners-bg">
+    <h2 class="hidden">Partners</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="partners-slider">
+                    <div class="grid">
+                        <img src="{% static 'crownpack_app/assets/images/partners/img-1.png' %}" alt>
+                    </div>
+                    <div class="grid">
+                        <img src="{% static 'crownpack_app/assets/images/partners/img-2.png' %}" alt>
+                    </div>
+                    <div class="grid">
+                        <img src="{% static 'crownpack_app/assets/images/partners/img-3.png' %}" alt>
+                    </div>
+                    <div class="grid">
+                        <img src="{% static 'crownpack_app/assets/images/partners/img-4.png' %}" alt>
+                    </div>
+                    <div class="grid">
+                        <img src="{% static 'crownpack_app/assets/images/partners/img-2.png' %}" alt>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end partners -->
 
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{% static 'crownpack_app/assets/img/clients/client-2.png' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{% static 'crownpack_app/assets/img/clients/client-3.png' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{% static 'crownpack_app/assets/img/clients/client-4.png' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{% static 'crownpack_app/assets/img/clients/client-5.png' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{% static 'crownpack_app/assets/img/clients/client-6.png' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{% static 'crownpack_app/assets/img/clients/client-7.png' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 col-6">
-            <div class="client-logo">
-              <img src="{% static 'crownpack_app/assets/img/clients/client-8.png' %}" class="img-fluid" alt="">
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Our Clients Section -->
-
-  </main><!-- End #main -->
 
 {% endblock  %}

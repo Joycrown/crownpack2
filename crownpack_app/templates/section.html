@@ -1,144 +1,140 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} Sections {% endblock%}
+{% block title %} About {% endblock %}
 
 {% block content %}
 
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Sections/Departments</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Sections</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
 
 
-  <main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Department/Sections</h2>
-          <ol>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li>Sections</li>
-          </ol>
+    <!-- recent-project --> 
+<section class="section-padding projects-grid-view-section">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="projects-grid-view">
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-1.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-2.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-3.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-4.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-5.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-2.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-3.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-4.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-5.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Chemical Refinery</h3></a>
+                                <div class="tags">Michigan, US</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-      </div>
-    </section><!-- End Breadcrumbs -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="section" class="section">
-      <div class="container">
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Flexible</li>
-              <li data-filter=".filter-card">Extrusion</li>
-              <li data-filter=".filter-web">Offset</li>
-              <li data-filter=".filter-web">Cutting</li>
-              <li data-filter=".filter-web">Paper</li>
-              <li data-filter=".filter-web">Quality Control</li>
-              <li data-filter=".filter-web">Maintenance</li>
-            </ul>
-          </div>
+        <div class="row more-projects">
+            <a href="#" class="theme-btn">More projects</a>
         </div>
+    </div> <!-- end container -->
+</section>
+<!-- end recent-project -->        
 
-        <div class="row portfolio-container" data-aos="fade-up">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-1.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>8 colors Printing Machine</h4>
-              <p>Section/Flexibles</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="8 colors Printing Machine"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-2.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Cutting Machine</h4>
-              <p>Section/Cutting</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-2.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Cutting Machine"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-3.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Laminating Machine</h4>
-              <p>Section/Flexibles</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-3.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Laminating Machine"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-4.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Slitting Machine</h4>
-              <p>Section/flexo</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-4.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Slitting Machine"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-5.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Quality Control Office</h4>
-              <p>Section/Quality Control</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-5.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Quality Control Office"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-6.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Rewinding Machine</h4>
-              <p>Section/Flexibles</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-6.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Rewinding Machine"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-7.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Die Cutting Machine</h4>
-              <p>Section/Offset</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-7.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Die Cutting Machine"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-8.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Die Cutting Machine</h4>
-              <p>Section/Offset</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-8.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Die Cutting Machine"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="{% static 'crownpack_app/assets/img/portfolio/portfolio-9.jpg' %}" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Extrusion Machine</h4>
-              <p>Section/Extrusion</p>
-              <a href="{% static 'crownpack_app/assets/img/portfolio/portfolio-9.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Extrusion Machine"><i class="bx bx-plus"></i></a>
-              <a href="#" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-  </main><!-- End #main -->
-
-  {% endblock %}  
+{% endblock  %}
