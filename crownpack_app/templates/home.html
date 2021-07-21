@@ -113,8 +113,8 @@
                         <button class="close-navbar"><i class="fa fa-close"></i></button>
                         <ul class="nav navbar-nav">
                             <li> <a href="{% url 'home' %}">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Sections</a></li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li><a href="{% url 'section' %}">Sections</a></li>
                             <li class="menu-item-has-children">
                                 <a href="#">Staffs portal</a>
                                 <ul class="sub-menu">
@@ -122,7 +122,7 @@
                                     <li><a href="#">Sign Up</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
                 </div><!-- end of container -->
@@ -140,10 +140,10 @@
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
                                 <h2>Welcome to <span> Crownpack </span><br>Nigeria Ltd </h2>
-                                <p>Crownpack Nig Ltd is one of Nigeria leading primary packaging of foods and general merchandise companies.</p>
+                                <p>Crownpack Nig Ltd is one of Nigeria leading food packaging and general merchandise companies.</p>
                                 <div class="btns">
-                                    <a href="#"class="theme-btn">About us</a>
-                                    <a href="#"class="theme-btn-s2">Reach us</a>
+                                    <a href="{% url 'about' %}"class="theme-btn">About us</a>
+                                    <a href="{% url 'contact' %}"class="theme-btn-s2">Reach us</a>
                                 </div>
                             </div>
                         </div>
@@ -156,10 +156,10 @@
                         <div class="row">
                             <div class="col col-lg-8 col-sm-9 slide-caption">
                                 <h2>Welcome to <span> Crownpack </span><br>Nigeria Ltd </h2>
-                                <p>Crownpack Nig Ltd is one of Nigeria leading primary packaging of foods and general merchandise companies.</p>
+                                <p>Crownpack Nig Ltd is one of Nigeria leading food packaging and general merchandise companies.</p>
                                 <div class="btns">
-                                    <a href="#" class="theme-btn">About us</a>
-                                    <a href="#"class="theme-btn-s2">Reach Us</a>
+                                    <a href="{% url 'about' %}"class="theme-btn">About us</a>
+                                    <a href="{% url 'contact' %}"class="theme-btn-s2">Reach us</a>
                                 </div>
                             </div>
                         </div>
@@ -174,8 +174,8 @@
                                 <h2>Welcome to <span> Crownpack </span><br>Nigeria Ltd </h2>
                                 <p>What do you want to know about us? will you like to reach us to us?</p>
                                 <div class="btns">
-                                    <a href="#"class="theme-btn">About us</a>
-                                    <a href="#" class="theme-btn-s2">Reach Us</a>
+                                    <a href="{% url 'about' %}"class="theme-btn">About us</a>
+                                    <a href="{% url 'contact' %}"class="theme-btn-s2">Reach us</a>
                                 </div>
                             </div>
                         </div>
@@ -203,11 +203,11 @@
                             <h2>What we do</h2>
                         </div>
                         <div class="offer-text">
-                            <p>Crownpack Nig Ltd is one of Nigeria leading primary producing food and general merchandise companies.</p>
+                            <p>Crownpack Nig Ltd is one of Nigeria leading food packaging and general merchandise companies.</p>
                             <p>Crownpack produce all sort of packages for foods and general merchandise suchs as soaps, 
                                 detergents, hair accessories etc and PVC nylons 
                                 of different composition for different uses.</p>
-                            <a href="#" class="theme-btn read-more">Read More</a>
+                            <a href="{% url 'about' %}" class="theme-btn read-more">Read More</a>
                         </div>
                     </div>
                     <div class="col col-md-8">
@@ -220,7 +220,7 @@
                                     <h3>Advanced Equipments</h3>
                                     <p> We own modern advanced production equipment, such as computer high speed 
                                         8 colours printing machines, widen large lamination machines; cutting and extrusion machines.</p>
-                                    <a href="#" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
+                                    <a href="{% url 'section' %}" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                             <div class="grid">
@@ -229,8 +229,9 @@
                                         <i class="fi flaticon-people"></i> 
                                     </div>
                                     <h3>Expert Engineers</h3>
-                                    <p>We have qualified and well trained engineers in all sections to enable and avoid dealys due to unforseen machine breakdown.</p>
-                                    <a href="#" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
+                                    <p>We have qualified and well trained engineers in all sections
+                                         to enable and avoid delays due to unforseen machine breakdown.</p>
+                                    <a href="{% url 'section' %}" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                             <div class="grid">
@@ -239,8 +240,9 @@
                                         <i class="fi flaticon-support"></i> 
                                     </div>
                                     <h3>Quality Control Services</h3>
-                                    <p>We have a well equipped laboratory for quality contol services making sure all ends meets and ensuring production is up too standard</p>
-                                    <a href="#" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
+                                    <p>We have a well equipped laboratory for quality contol services
+                                         making sure all ends meets and ensuring production is up too standard</p>
+                                    <a href="{% url 'section' %}" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                             <div class="grid">
@@ -250,7 +252,7 @@
                                     </div>
                                     <h3>Delivery On time</h3>
                                     <p>Transportation of goods as at when due. Fast delivery to customers within and far away.</p>
-                                    <a href="#" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
+                                    <a href="{% url 'section' %}" class="offer-details">Details <i class="fa fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -280,99 +282,99 @@
                     <div class="recent-projects-grids">
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-1.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-1.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>8 colors Printing Machine</h3></a>
+                                    <a href="{% url 'section' %}"><h3>8 colors Printing Machine</h3></a>
                                     <div class="tags">Section/Flexibles</div>
                                 </div>
                             </div>
                         </div>
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-2.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-2.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>Laminating Machine</h3></a>
+                                    <a href="{% url 'section' %}"><h3>Laminating Machine</h3></a>
                                     <div class="tags">Section/Flexibles</div>
                                 </div>
                             </div>
                         </div>
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-3.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-3.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>Extrusion Machine</h3></a>
+                                    <a href="{% url 'section' %}"><h3>Extrusion Machine</h3></a>
                                     <div class="tags">Section/Extrusion</div>
                                 </div>
                             </div>
                         </div>
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-4.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-4.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>Cutting Machine</h3></a>
+                                    <a href="{% url 'section' %}"><h3>Cutting Machine</h3></a>
                                     <div class="tags">Section/Cutting</div>
                                 </div>
                             </div>
                         </div>
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-5.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-5.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>Rewinding Machine</h3></a>
+                                    <a href="{% url 'section' %}"><h3>Rewinding Machine</h3></a>
                                     <div class="tags">Section/Flexibles</div>
                                 </div>
                             </div>
                         </div>
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-6.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-6.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>Quality Control Office</h3></a>
+                                    <a href="{% url 'section' %}"><h3>Quality Control Lab</h3></a>
                                     <div class="tags">Section/Quality Control</div>
                                 </div>
                             </div>
                         </div>
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-7.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-7.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>Slitting Machine</h3></a>
-                                    <div class="tags">Section/flexo</div>
+                                    <a href="{% url 'section' %}"><h3>Slitting Machine</h3></a>
+                                    <div class="tags">Section/flexible</div>
                                 </div>
                             </div>
                         </div>
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-8.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-8.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>Die Cutting Machine</h3></a>
+                                    <a href="{% url 'section' %}"><h3>Die Cutting Machine</h3></a>
                                     <div class="tags">Section/Offset</div>
                                 </div>
                             </div>
                         </div>
                         <div class="grid">
                             <div class="project-img">
-                                <img src="{% static 'crownpack_app/assets/images/projects/img-9.jpg' %}" alt>
+                                <img src="{% static 'crownpack_app/assets/images/projects/projects/img-9.jpg' %}" alt>
                             </div>
                             <div class="project-info">
                                 <div class="inner-info">
-                                    <a href="#"><h3>Bobst Die Cutting Machine</h3></a>
+                                    <a href="{% url 'section' %}"><h3>Bobst Die Cutting Machine</h3></a>
                                     <div class="tags">Section/Offset</div>
                                 </div>
                             </div>
@@ -395,13 +397,13 @@
                                 <h2>Get full range of production of packaging services for your business</h2>
                             </div>
                             <div class="details">
-                                <p>Crownpack Nig Ltd is one of Nigeria leading primary producing food and general merchandise companies.</p>
+                                <p>Crownpack Nig Ltd is one of Nigeria leading food packaging and general merchandise companies.</p>
                                 <p>Crownpack produce all sort of packages for foods and general merchandise suchs as soaps, 
                                 detergents, hair accessories etc and PVC nylons 
                                 of different composition for different uses.</p>
                                 <div class="btns">
-                                    <a href="#" class="theme-btn-s3">Read More</a>
-                                    <a href="#" class="theme-btn-s4">Reach Us</a>
+                                    <a href="{% url 'about' %}" class="theme-btn-s3">Read More</a>
+                                    <a href="{% url 'contact' %}" class="theme-btn-s4">Reach Us</a>
                                 </div>
                             </div>
                             <div class="social">
@@ -591,7 +593,7 @@
                                     <li><i class="fa fa-home"></i> Block 34,Plot 3<br>Ogun State Housing Corporation<br>Industrial Estate,Idiroko Road,
                                         <br>Ota, Ogun state, Nigeria</li>
                                     <li><i class="fa fa-phone"></i> +234 814 687 4760</li>
-                                    <li><i class="fa fa-home"></i> Working Hours: <br>Mon-Sat (7 am - 7 pm)</li>
+                                    <li><i class="fa fa-home"></i> Working Hours: <br>Mon-Fri (7 am - 7 pm)</li>
                                 </ul>
                             </div>
                         </div>
@@ -600,11 +602,11 @@
                             <div class="widget service-links-widget">
                                 <h3>Sections</h3>
                                 <ul>
-                                    <li><a href="#">Flexibles</a></li>
-                                    <li><a href="#">Offset</a></li>
-                                    <li><a href="#">Quality Control</a></li>
-                                    <li><a href="#">Maintenance </a></li>
-                                    <li><a href="#">Extrusion</a></li>
+                                    <li><a href="{% url 'section' %}">Flexibles</a></li>
+                                    <li><a href="{% url 'section' %}">Offset</a></li>
+                                    <li><a href="{% url 'section' %}">Quality Control</a></li>
+                                    <li><a href="{% url 'section' %}">Maintenance </a></li>
+                                    <li><a href="{% url 'section' %}">Extrusion</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -613,11 +615,11 @@
                             <div class="widget quick-links-widget">
                                 <h3>Navigation</h3>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Sections</a></li>
-                                    <li><a href="#">Staff Portal</a></li>
-                                    <li><a href="#">contact</a></li>
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li><a href="{% url 'about' %}">About</a></li>
+                                    <li><a href="{% url 'section' %}">Sections</a></li>
+                                    
+                                    <li><a href="{% url 'contact' %}">contact</a></li>
                                    
                                 </ul>
                                
@@ -630,7 +632,7 @@
             </div> <!-- end upper-footer -->
             <div class="copyright-info">
                 <div class="container">
-                    <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+                    <p><a target="_blank" href="#">Joycrown Technologies</a></p>
                 </div>
             </div>
         </footer>
