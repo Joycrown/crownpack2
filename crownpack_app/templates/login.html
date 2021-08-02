@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+<body>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form}}
+        <a href="{%url 'sign up'%}">Click to sign up</a>
+        <button type="submit">click</button>
+    </form>
+</body>
+
+
+{% endblock %}

@@ -19,9 +19,37 @@ def section(request):
 
 
 
+def login(request):
+    return render(request, 'login.html', {}) 
+
+
+def sign_up(request):
+    return render(request, 'sign-up.html', {})
+
+
+def full_section(request):
+    return render(request, 'full-section.html', {}) 
+
+
+def flexible(request):
+    return render(request, 'flexible.html', {})
+
+
+def offset(request):
+    return render(request, 'offset.html', {})     
+
+
 def quality(request):
     return render(request, 'quality.html', {}) 
 
 
-def food(request):
-    return render(request, 'food.html', {})           
+def maintenance(request):
+    return render(request, 'maintenance.html', {})      
+
+
+def extrusion(request):
+    return render(request, 'extrusion.html', {})   
+
+
+def cutting(request):
+    return render(request, 'cutting.html', {})                                    

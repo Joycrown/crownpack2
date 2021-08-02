@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Offset</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Offset</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<!-- start project-single-section -->
+<section class="project-single-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-7">
+                <div class="project-single-img">
+                    <img src="{% static 'crownpack_app/assets/images/project-single-img1.jpg' %}" alt>
+                </div>
+            </div>
+            <div class="col col-md-5">
+                <div class="project-single-details">
+                    <h3>Offset</h3>
+                    <p>Unlike the <a href="{% url 'flexible' %}" >flexible section </a>, offset prints or customized
+                    on only hard covers, mart paper etc of different card/paper gramms. Operation processes includes<p> 
+                        <b> Graphics -> Printing -> <a href="{% url 'quality' %}" >Quality check </a> -> Die cutting -> <a href="{% url 'quality' %}" >Quality check </a> -> 
+                            folder glue -> <a href="{% url 'quality' %}" >Quality check </a> -> packaging.</b></p>
+                    <p>Die cutting: The shaping of printed or customized jobs into desired shapes fit for products.</p>
+                    <p>Folder glue: The folding and joining together of cuts on a job moulding into desired shapes fit for products.</p>
+                    <ul class="project-info">
+                        <li><i class="fa fa-tag"></i> <span>Section:</span> Offset</li>
+                        <li><i class="fa fa-user"></i> <span>Head Of Department:</span> Mr Olaniyan</li>
+                        <li><i class="fa fa-calendar"></i> <span>Supervisor(s):</span> Miss Awesome Grace, Mrs Olaniyan Grace</li>
+                        <li><i class="fa fa-external-link"></i> <span>No Of Staffs::</span> 20</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end project-single-section -->
+
+{% endblock  %}

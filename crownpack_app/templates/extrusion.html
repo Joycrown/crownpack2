@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Extrusion</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Extrusion</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<!-- start project-single-section -->
+<section class="project-single-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-7">
+                <div class="project-single-img">
+                    <img src="{% static 'crownpack_app/assets/images/project-single-img5.jpg' %}" alt>
+                </div>
+            </div>
+            <div class="col col-md-5">
+                <div class="project-single-details">
+                    <h3>Extrusion</h3>
+                    <p>Flexible or shrink packages are made or produced in the section from its respective raw materials such
+                        as HPDE, LPDE, Polyethene, etc. Processes in the section are limited with the manufacturing and
+                         <a href="{% url 'quality' %}" >Quality check </a>.
+                    </p>
+                    <p>The section currently has one of the recent extrusion machine, which is currently 
+                        one of its kind in West Africa.</p>
+                    <ul class="project-info">
+                        <li><i class="fa fa-tag"></i> <span>Section:</span> Extrusion</li>
+                        <li><i class="fa fa-user"></i> <span>Head Of Department:</span> Miss Olaniyan Grace </li>
+                        <li><i class="fa fa-calendar"></i> <span>Supervisor(s):</span> Awesome Grace, AwesomeJoy</li>
+                        <li><i class="fa fa-external-link"></i> <span>Staffs::</span> 20</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end project-single-section -->
+
+{% endblock  %}

@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Sections/Departments</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Sections</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+    <!-- recent-project --> 
+<section class="section-padding projects-grid-view-section">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <div class="projects-grid-view">
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-1.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>8 colors Printing Machine</h3></a>
+                                <div class="tags">Section/Flexible</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-2.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Laminating Machine</h3></a>
+                                <div class="tags">Section/Flexible</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-3.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Extrusion Machine</h3></a>
+                                <div class="tags">Section/Extrusion</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-4.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Cutting Machine</h3></a>
+                                <div class="tags">Section/Cutting</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-5.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Rewinding Machine</h3></a>
+                                <div class="tags">Section/Flexible</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-6.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Quality Control Lab</h3></a>
+                                <div class="tags">Section/Quality Control</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-7.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Slitting Machine</h3></a>
+                                <div class="tags">Section/flexible</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-8.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Die Cutting Machine</h3></a>
+                                <div class="tags">Section/Offset</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="project-img">
+                            <img src="{% static 'crownpack_app/assets/images/projects/img-9.jpg' %}" alt>
+                        </div>
+                        <div class="project-info">
+                            <div class="inner-info">
+                                <a href="#"><h3>Komori Offset Printing Machine</h3></a>
+                                <div class="tags">Section/Offset</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row more-projects">
+            <a href="#" class="theme-btn">More Sections</a>
+        </div>
+    </div> <!-- end container -->
+</section>
+<!-- end recent-project -->        
+
+{% endblock  %}

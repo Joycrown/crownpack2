@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Maintenance</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Maintenance</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<!-- start project-single-section -->
+<section class="project-single-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-7">
+                <div class="project-single-img">
+                    <img src="{% static 'crownpack_app/assets/images/project-single-img3.jpg' %}" alt>
+                </div>
+            </div>
+            <div class="col col-md-5">
+                <div class="project-single-details">
+                    <h3>Maintenance</h3>
+                    <p>All forms of equipment used in the factory are regularly checked and serviced as required by 
+                        the standard operation of the equipment.</p>
+                    <p>These is to ensure safety in operation and avoid unnecessary machine breakdown.</p>
+                    <ul class="project-info">
+                        <li><i class="fa fa-tag"></i> <span>Section:</span> Maintenance</li>
+                        <li><i class="fa fa-user"></i> <span>Head Of Department:</span> Mr Olaniyan</li>
+                        <li><i class="fa fa-calendar"></i> <span>Supervisor(s):</span> Mr Joycrown </li>
+                        <li><i class="fa fa-external-link"></i> <span>Staffs::</span> 15</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end project-single-section -->
+
+{% endblock  %}

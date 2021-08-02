@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Full section</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Full section</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<!-- start service-singel-section -->
+<section class="service-singel-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-8 col-md-push-4">
+                <div class="service-single-content">
+                    <div>
+                        <img src="{% static 'crownpack_app/assets/images/service-single-info.jpg' %}" alt>
+                    </div>
+                    <div class="title">
+                        <h3>Section and details</h3>
+                    </div>
+                    <div class="details">
+                        <p>We have six(6) major departments with other sub sections in each section to enable 
+                            easy communication and free flow of work with high level of coordination.
+                            With each departments with its head and Supervisor(s), providing all it needed for each
+                             section and subsection to function to their highest potentials.
+                        </p>
+                    
+                        <a href="{% url 'contact' %}" class="theme-btn">Contact us</a>
+                    </div>
+                </div> <!-- end service content -->
+            </div> <!-- end col -->
+            
+            <div class="col col-md-4 col-md-pull-8">
+                <div class="service-single-sidebar">
+                    <div class="services-link-widget widget">
+                        <ul>
+                            <li class="current"><a href="#">Sections</a></li>
+                            <li><a href="{% url 'flexible' %}">Flexible</a></li>
+                            <li><a href="{% url 'offset' %}">Offset</a></li>
+                            <li><a href="{% url 'quality' %}">Quality Control</a></li>
+                            <li><a href="{% url 'maintenance' %}">Maintenance</a></li>
+                            <li><a href="{% url 'cutting' %}">Cutting</a></li>
+                            <li><a href="{% url 'extrusion' %}">Extrusion</a></li>
+                        </ul>
+                    </div>
+                   
+                    <div class="widget contact-widget">
+                        <h3>Do you want to do business with us?</h3>
+                        <p>What would you like to know? will you like to reach out to us?
+                            Click on the above contact us button, we are here to serve.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end service-single-section -->
+
+{% endblock  %}

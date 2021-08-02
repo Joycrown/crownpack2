@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Flexible</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Flexible</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<!-- start project-single-section -->
+<section class="project-single-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-7">
+                <div class="project-single-img">
+                    <img src="{% static 'crownpack_app/assets/images/project-single-img.jpg' %}" alt>
+                </div>
+            </div>
+            <div class="col col-md-5">
+                <div class="project-single-details">
+                    <h3>Flexible</h3>
+                    <p>Printed and customized flexible packaging rollstock for use in vertical and horizontal 
+                        form/fill/seal equipment, custom-engineered with the properties your products requires to extends
+                    shelf life and use, such as high barriers, chemical resistance, and puncture resistance.</p>
+                    <p>The process in the section includes <b> Printing -> <a href="{% url 'quality' %}" >Quality check </a> -> Lamination -><a href="{% url 'quality' %}" >Quality check </a> -> Rewinding
+                        -> Slitting -> Packaging.
+                    </b></p>
+                    <ul class="project-info">
+                        <li><i class="fa fa-tag"></i> <span>Section:</span> Flexible</li>
+                        <li><i class="fa fa-user"></i> <span>Head Of Department:</span> Mr Olaniyan</li>
+                        <li><i class="fa fa-calendar"></i> <span>Supervisor(s):</span> Mr Olaniyan, Mr Joycrown</li>
+                        <li><i class="fa fa-external-link"></i> <span>No of Staffs</span> 20</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end project-single-section -->
+
+{% endblock  %}

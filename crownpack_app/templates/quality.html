@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h2>Quality Control</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Quality Control</li>
+                </ol>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<!-- start project-single-section -->
+<section class="project-single-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-7">
+                <div class="project-single-img">
+                    <img src="{% static 'crownpack_app/assets/images/project-single-img2.jpg' %}" alt>
+                </div>
+            </div>
+            <div class="col col-md-5">
+                <div class="project-single-details">
+                    <h3>Quality Control</h3>
+                    <p>All forms of projects and raw materials are highly scrutinized by the section. 
+                        Products during production and operation as well as product or finished jobs after production and operation.</p>
+                    <p>All product are checked against the ISO standards making sure all standards are met.</p>
+                    <ul class="project-info">
+                        <li><i class="fa fa-tag"></i> <span>Section:</span> Quality Control</li>
+                        <li><i class="fa fa-user"></i> <span>Head Of Department:</span> Mr Olaniyan Ayoade</li>
+                        <li><i class="fa fa-calendar"></i> <span>Supervisor(s):</span> Miss Awesome G, Mrs Grace Olaniyan</li>
+                        <li><i class="fa fa-external-link"></i> <span>No Of Staffs::</span> 10</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>
+<!-- end project-single-section -->
+
+{% endblock  %}
