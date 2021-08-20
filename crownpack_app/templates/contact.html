@@ -57,37 +57,40 @@
     </div> <!-- end row -->
     <div class="row">
         <div class="col col-xs-12">
-            <form class="contact-form form contact-validation-active row" id="contact-form-s2">
-                <div class="col col-sm-6">
-                    <label for="f-name">First Name</label>
-                    <input type="text" class="form-control" id="f-name" name="f_name">
-                </div>
-                <div class="col col-sm-6">
-                    <label for="l-name">Last Name</label>
-                    <input type="text" class="form-control" id="l-name" name="l_name">
-                </div>
-                <div class="col col-sm-6">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                </div>
-                <div class="col col-sm-6">
-                    <label for="phone">Phone No</label>
-                    <input type="text" class="form-control" id="phone" name="phone">
-                </div>
-                <div class="col col-sm-12">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" name="note"></textarea>
-                </div>
-                <div class="col col-sm-12 submit-btn">
-                    <button class="theme-btn">Submit</button>
-                    <div id="loader">
-                        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+            <form action="https://formspree.io/f/mnqlogok" method="post">
+                {% csrf_token %}
+                <form class="contact-form form contact-validation-active row" id="contact-form-s2">
+                    <div class="col col-sm-6">
+                        <label for="f-name">First Name</label>
+                        <input type="text" class="form-control" id="f-name" name="f_name">
                     </div>
-                </div>
-                <div class="error-handling-messages">
-                    <div id="success">Thank you</div>
-                    <div id="error"> Error occurred while sending email. Please try again later. </div>
-                </div>
+                    <div class="col col-sm-6">
+                        <label for="l-name">Last Name</label>
+                        <input type="text" class="form-control" id="l-name" name="l_name">
+                    </div>
+                    <div class="col col-sm-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="col col-sm-6">
+                        <label for="phone">Phone No</label>
+                        <input type="text" class="form-control" id="phone" name="phone">
+                    </div>
+                    <div class="col col-sm-12">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="note"></textarea>
+                    </div>
+                    <div class="col col-sm-12 submit-btn">
+                        <button class="theme-btn">Submit</button>
+                        <div id="loader">
+                            <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+                        </div>
+                    </div>
+                    <div class="error-handling-messages">
+                        <div id="success">Thank you</div>
+                        <div id="error"> Error occurred while sending email. Please try again later. </div>
+                    </div>
+                </form>
             </form>
         </div>
     </div>

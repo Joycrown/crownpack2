@@ -1,12 +1,24 @@
 from django.shortcuts import render
-
+from django.core.mail import send_mail
 
 def home(request):
     return render(request, 'home.html', {})
 
 
 def contact(request):
-    return render(request, 'contact.html', {})
+    if request.method == "POST":
+        f_name = request.POST['f_name']
+        l_name = request.POST['l_name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        message = request.POST['message']
+         
+
+        send_mail(f_name, message, email, ['olaniyanayoade@ymail.com'],)
+        return render(request, 'contact.html', {})
+
+    else:
+        return render(request, 'contact.html', {})
 
 
 def about(request):
